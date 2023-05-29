@@ -1,0 +1,9 @@
+.to-do__item{
+    display: flex;
+    align-items: center;
+}
+
+.check:checked ~ .elemento__texto{
+    text-decoration: line-through;
+    color: var(--cinza-claro);
+}

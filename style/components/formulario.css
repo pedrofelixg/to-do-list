@@ -1,0 +1,23 @@
+.to-do__formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+#atividade{
+    padding: .5rem;
+    border-radius: .25rem;
+    border: none;
+    margin-bottom: .75rem;
+    background-color: var(--azul-nuvem);
+    font-family: 'Poppins', sans-serif;
+}
+
+#btn__atividade{
+    margin: 0 8rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--navy-blue);
+    color: var(--branco-gelo);
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}

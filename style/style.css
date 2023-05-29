@@ -1,0 +1,13 @@
+@import url(./config/color.css);
+@import url(./components/titulo.css);
+@import url(./components/formulario.css);
+@import url(./components/lista.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Poppins&display=swap');
+
+body{
+    background-color: var(--branco-gelo);
+    color: var(--preto-fosco);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
