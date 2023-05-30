@@ -25,5 +25,13 @@ os arquivos CSS foram organizados com a intenção de corrigir algo que vinha do
 ![imagem da arquitetura de pastas do css](./images/arquiteturaPastas.jpg)
 
 ----------------------
+## **Quer contribuir?**
+Essa aplicação é simples, e feita sem frameworks ou qualquer dependências, basta clonar o repositório deste git-hub, testar as implantações e submeter o código novo ao Pull Request.
+
+----------------------
 
 ## **Prévia**
+Prévia Simples:
+<div align="center">
+    <img src="./images/previaSimples.png" alt="Prévia básica" width="50%">
+</div>
