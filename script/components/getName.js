@@ -1,5 +1,3 @@
-const botao = document.querySelector("#btn__atividade");
-
 function getName(){
     const atividade = document.querySelector("#atividade");
     const atividadeVazia = "";
@@ -15,11 +13,4 @@ function getName(){
     }
 }
 
-function printNewWork(){
-    const lista = document.querySelector(".to-do__lista");
-    const getActividade = getName();
-
-    lista.insertAdjacentHTML("beforeend", getActividade);
-}
-
-botao.addEventListener("click", printNewWork);
+export default getName;
