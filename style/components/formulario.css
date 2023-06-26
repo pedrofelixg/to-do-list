@@ -12,6 +12,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#atividade.dark-mode{
+    background-color: var(--rosa-claro);
+}
+
 #btn__atividade{
     margin: 0 8rem 1rem;
     border: none;
@@ -20,4 +24,9 @@
     color: var(--branco-gelo);
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
+}
+
+#btn__atividade.dark-mode{
+    background-color: var(--vermelho-imperial);
+    color: var(--preto-fosco);
 }

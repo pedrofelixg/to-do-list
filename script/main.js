@@ -1,5 +1,11 @@
+const body = document.getElementsByTagName('body')[0];
+const titulo = document.querySelector(".to-do__titulo");
 const form = document.getElementById("formulario");
+const input = document.querySelector("#atividade");
 const botao = document.querySelector("#btn__atividade");
+const btnExcluir = document.querySelector("#formClear");
+const btnDarkMode = document.querySelector("#darkModeSelect");
+const classDark = "dark-mode"
 
 function getName(){
     const atividade = document.querySelector("#atividade");
@@ -17,14 +23,36 @@ function getName(){
     }
 }
 
-// function printNewWork(){
-//     const lista = document.querySelector(".to-do__lista");
-//     const getActividade = getName();
+function limparFormulario() {
+    console.log("vai limpar");
+}
 
-//     lista.insertAdjacentHTML("beforeend", getActividade);
-// }
+// dark-mode
+function modificarClasse() {
+    body.classList.toggle(classDark);
+    titulo.classList.toggle(classDark);
+    input.classList.toggle(classDark);
+    botao.classList.toggle(classDark);
+    btnDarkMode.classList.toggle(classDark);
+}
 
-// botao.addEventListener("click", printNewWork);
+function modificarTexto() {
+    const lightMode = `<i class="fa-solid fa-sun"></i> Light Mode`;
+    const darkMode = `<i class="fa-solid fa-moon"></i> Dark Mode`;
+
+    if(body.classList.contains(classDark)) {
+        btnDarkMode.innerHTML = lightMode;
+        return
+    }
+    btnDarkMode.innerHTML = darkMode;
+}
+
+function modoEscuro() {
+    modificarClasse();
+    modificarTexto();
+}
+
+// fim do dark-mode
 
 form.addEventListener("submit", (e)=> {
     e.preventDefault();
@@ -33,3 +61,6 @@ form.addEventListener("submit", (e)=> {
 
     lista.insertAdjacentHTML("beforeend", getActividade);
 });
+
+btnExcluir.addEventListener("click", limparFormulario);
+btnDarkMode.addEventListener("click", modoEscuro);

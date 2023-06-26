@@ -20,3 +20,8 @@
     background-color: var(--preto-fosco);
     color: var(--branco-gelo);
 }
+
+.btnDarkMode.dark-mode{
+    background-color: var(--branco-gelo);
+    color: var(--preto-fosco);
+}

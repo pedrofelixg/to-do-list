@@ -12,3 +12,8 @@ body{
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
+
+body.dark-mode{
+    background-color: var(--preto-fosco);
+    color: var(--branco-gelo);
+}
