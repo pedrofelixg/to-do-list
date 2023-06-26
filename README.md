@@ -24,6 +24,10 @@ os arquivos CSS foram organizados com a intenção de corrigir algo que vinha do
 
 ![imagem da arquitetura de pastas do css](./images/arquiteturaPastas.jpg)
 
+Fiz uma pequena verificação de validade para não passar strings vazias para o input que listará a atividade.
+
+![gif com o aviso de string inválida](./images/verificacaoDeString.gif)
+
 ----------------------
 ## **Quer contribuir?**
 Essa aplicação é simples, e feita sem frameworks ou qualquer dependências, basta clonar o repositório deste git-hub, testar as implantações e submeter o código novo ao Pull Request.
