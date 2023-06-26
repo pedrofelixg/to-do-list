@@ -13,4 +13,4 @@ function getName(){
     }
 }
 
-export default getName;
+export default {getName};

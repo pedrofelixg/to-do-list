@@ -1,0 +1,22 @@
+.btnActions{
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem 0;
+    gap: 2rem;
+}
+.btnExcluir, .btnDarkMode {
+    padding: .5rem .8rem;
+    border-radius: 8px;
+    border: none;
+}
+.btnExcluir {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--vermelho-imperial);
+    color: var(--branco-gelo);
+}
+
+.btnDarkMode {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--preto-fosco);
+    color: var(--branco-gelo);
+}

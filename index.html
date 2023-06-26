@@ -13,16 +13,21 @@
         <h1 class="to-do__titulo">Lista de Tarefas</h1>
     </header>
 
-    <forma action="" class="to-do__formulario" method="get">
+    <form action="" class="to-do__formulario" id="formulario">
         <input type="text" id="atividade" placeholder="digite sua atividade">
         <button type="submit" id="btn__atividade">listar</button>
-    </forma>
+    </form>
 
     <div class="to-do__lista">
         <div class="to-do__item">
             <input type="checkbox" class="check"> <p class="elemento__texto">Este é um exemplo de como deve ficar</p>
         </div>
     </div>
+
+    <span class="btnActions">
+        <button class="btnExcluir" id="formClear">Excluir Lista</button>
+        <button class="btnDarkMode" id="darkModeSelect">Dark Mode</button>
+    </span>
 
     <script src="./script/main.js"></script>
 </body>
