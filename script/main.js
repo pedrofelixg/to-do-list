@@ -8,10 +8,9 @@ const btnDarkMode = document.querySelector("#darkModeSelect");
 const classDark = "dark-mode"
 
 function getName(){
-    const atividade = document.querySelector("#atividade");
     const atividadeVazia = "";
 
-    if(atividade.value === atividadeVazia){
+    if(input.value === atividadeVazia){
         alert("É preciso informar uma atividade válida");
         return ``;
     } else {
@@ -60,6 +59,11 @@ form.addEventListener("submit", (e)=> {
     const getActividade = getName();
 
     lista.insertAdjacentHTML("beforeend", getActividade);
+    
+    localStorage.setItem("item", input.value);
+    
+    input.value = "";
+
 });
 
 btnExcluir.addEventListener("click", limparFormulario);
